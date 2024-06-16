@@ -1,0 +1,28 @@
+.home {
+  position: relative;
+
+  display: flex;
+  gap: 8rem;
+
+  padding: 0 4rem;
+}
+
+.home--content {
+  color: black;
+
+  border: 1px solid red;
+}
+
+.home--beginnings {
+}
+
+.home--beginnings > header {
+  font-size: 3.6rem;
+  font-weight: 500;
+
+  margin-bottom: 1rem;
+}
+
+.home--beginnings > p {
+  font-size: 1.6rem;
+}

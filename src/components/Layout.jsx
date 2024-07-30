@@ -1,11 +1,17 @@
-import { Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
-    <div className="layout">
-      <header>E&S 06.22.25</header>
+    <main className="layout">
+      {/* <header>E&S 06.22.25</header> */}
+      {/* <nav className="layout--nav">
+        <NavLink to="/timeline">Timeline</NavLink>
+        <NavLink to="/story">Story</NavLink>
+        <NavLink to="/memories">Memories</NavLink>
+        <NavLink to="/faq">FAQ</NavLink>
+      </nav> */}
       <Outlet />
-    </div>
+    </main>
   );
 };
 

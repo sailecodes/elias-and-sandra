@@ -1,19 +1,25 @@
 .home {
   position: relative;
 
-  display: flex;
-  gap: 8rem;
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  column-gap: 12rem;
 
   padding: 0 4rem;
 }
 
 .home--content {
+  flex-shrink: 0;
+
   color: black;
+
+  width: 100%;
 
   border: 1px solid red;
 }
 
 .home--beginnings {
+  padding: 4rem 0;
 }
 
 .home--beginnings > header {

@@ -1,6 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Layout from "./components/Layout";
-import Home from "./pages/Home";
 import Timeline from "./pages/Timeline";
 import Story from "./pages/Story";
 import Memories from "./pages/Memories";
@@ -13,10 +12,6 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />,
-      },
-      {
-        path: "/timeline",
         element: <Timeline />,
       },
       {

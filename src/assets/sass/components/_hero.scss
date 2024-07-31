@@ -1,7 +1,7 @@
 .hero {
   position: relative;
 
-  height: 75rem;
+  height: 90rem;
 
   margin-bottom: 10rem;
 }
@@ -11,6 +11,7 @@
   top: 50%;
   left: 0;
   transform: translateY(-50%);
+  z-index: 50;
 
   display: flex;
   flex-direction: column;
@@ -47,6 +48,11 @@
   border: 1px solid #fff;
 }
 
+.hero--video-container-video {
+  position: relative;
+  z-index: 49;
+}
+
 .hero--video-container-video > video {
   object-fit: cover;
 
@@ -58,6 +64,7 @@
   top: 0;
   right: 50%;
   transform: translateX(50%);
+  z-index: 50;
 
   color: #fff;
 
@@ -72,6 +79,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 50;
 
   color: #fff;
 

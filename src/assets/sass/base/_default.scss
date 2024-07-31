@@ -19,8 +19,6 @@ html {
 body {
   background-color: #708871;
   font-family: "Poppins", sans-serif;
-
-  // overflow: hidden;
 }
 
 // ==============================================
@@ -75,13 +73,5 @@ button:hover,
 // ==============================================
 
 ::-webkit-scrollbar {
-  width: 0.4rem;
-}
-
-::-webkit-scrollbar-track {
-  background-color: black;
-}
-
-::-webkit-scrollbar-thumb {
-  color: white;
+  width: 0;
 }

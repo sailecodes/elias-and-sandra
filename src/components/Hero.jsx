@@ -2,15 +2,13 @@ import ReactPlayer from "react-player";
 import { NavLink } from "react-router-dom";
 
 const Hero = ({ bg, text }) => {
-  console.log(`[Hero] bg: ${bg}`);
-
   return (
     <section className="hero">
       <ReactPlayer className="hero--video-container-video" url={bg} width="100%" height="100%" playing loop muted />
       <nav className="hero--nav">
         <div>
           <div className="hero--nav-active-marker" />
-          <NavLink to="/timeline">Timeline</NavLink>
+          <NavLink to="/">Timeline</NavLink>
         </div>
         <div>
           <div className="hero--nav-active-marker" />

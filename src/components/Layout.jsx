@@ -1,16 +1,15 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { useState } from "react";
+import { Outlet } from "react-router-dom";
+import Hero from "./Hero";
 
 const Layout = () => {
+  const [heroText, setHeroText] = useState("");
+  const [heroBg, setHeroBg] = useState(null);
+
   return (
-    <main className="layout">
-      {/* <header>E&S 06.22.25</header> */}
-      {/* <nav className="layout--nav">
-        <NavLink to="/timeline">Timeline</NavLink>
-        <NavLink to="/story">Story</NavLink>
-        <NavLink to="/memories">Memories</NavLink>
-        <NavLink to="/faq">FAQ</NavLink>
-      </nav> */}
-      <Outlet />
+    <main>
+      <Hero bg={heroBg} text={heroText} />
+      <Outlet context={{ setHeroText, setHeroBg }} />
     </main>
   );
 };
